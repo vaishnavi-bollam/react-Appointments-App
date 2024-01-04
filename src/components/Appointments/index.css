@@ -1,0 +1,141 @@
+/* Write your CSS here */
+* {
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+.bg {
+  border: 1px solid gray;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #fbc7d4, #9796f0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.innerCard {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 650px;
+}
+
+.titleTextStyle {
+  color: #b5b7c4;
+  font-weight: bold;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+.dateTextStyle {
+  color: #b5b7c4;
+  font-weight: bold;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.dateContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.titleInputStyle {
+  border-radius: 2px;
+  border: 1px solid #b5b7c4;
+  width: 200px;
+  padding: 8px;
+}
+
+.dateInputStyle {
+  border-radius: 2px;
+  border: 1px solid #b5b7c4;
+  width: 200px;
+  padding: 8px;
+}
+
+.addBtnEl {
+  background-color: #8b5cf6;
+  border: 4px solid transparent;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.upperContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imagePromotion {
+  height: 150px;
+  width: 280px;
+}
+
+.horizontalLine {
+  background-color: #cbd2d9;
+  height: 2px;
+}
+
+.lowerText {
+  font-weight: bold;
+}
+.starredBtnEl {
+  color: #9897f0;
+  border: 1px solid #9897f0;
+  border-radius: 1rem;
+  background-color: transparent;
+  font-weight: bold;
+  padding: 4px 16px;
+  cursor: pointer;
+}
+
+.starredBtnActiveChecked {
+  color: white;
+  background-color: #9796f0;
+  cursor: pointer;
+}
+
+.lowerHeadContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ulContainer {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+  .imagePromotion {
+    display: none;
+  }
+  .innerCard {
+    width: 400px;
+  }
+  .formContainer {
+    width: 100%;
+  }
+  .titleInputStyle,
+  .dateInputStyle {
+    width: 100%;
+  }
+
+  .ulContainer {
+    flex-direction: column;
+  }
+}

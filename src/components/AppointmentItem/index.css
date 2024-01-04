@@ -1,0 +1,31 @@
+/* Write your CSS here */
+* {
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+.liContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.starHead {
+  color: #171f46;
+  font-weight: bold;
+}
+
+.starPara {
+  color: #b5b7c4;
+  font-weight: bold;
+}
+
+.starBtnEl {
+  background-color: transparent;
+  border: 0px solid transparent;
+  cursor: pointer;
+}
